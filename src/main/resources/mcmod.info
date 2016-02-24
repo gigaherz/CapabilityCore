@@ -1,0 +1,16 @@
+[
+{
+  "modid": "CapabilityCore",
+  "name": "CapabilityCore",
+  "description": "Exposing useful Capabilities for the world.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["gigaherz"],
+  "credits": "The Forge and FML guys, for making modding nice",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
