@@ -15,6 +15,9 @@ public class CapabilityTweakable
 
     private static boolean enabled = false;
 
+    /**
+     * Call this from pre-init if you want to use this capability.
+     */
     public static void enable()
     {
         if (!enabled)
@@ -31,16 +34,18 @@ public class CapabilityTweakable
         }
     }
 
-    public static class Implementation implements ITweakable
+    private static class Implementation implements ITweakable
     {
         @Override
-        public void configure()
+        public void configure(float hitX, float hitY, float hitZ)
         {
+            // Itentionally left blank
         }
 
         @Override
         public void dismantle()
         {
+            // Itentionally left blank
         }
     }
 
@@ -50,12 +55,14 @@ public class CapabilityTweakable
         @Override
         public NBTBase writeNBT(Capability<ITweakable> capability, ITweakable instance, EnumFacing side)
         {
+            // Itentionally left blank
             return null;
         }
 
         @Override
         public void readNBT(Capability<ITweakable> capability, ITweakable instance, EnumFacing side, NBTBase nbt)
         {
+            // Itentionally left blank
         }
     }
 }

@@ -16,6 +16,9 @@ public class CapabilityEnergy
 
     private static boolean enabled = false;
 
+    /**
+     * Call this from pre-init if you want to use this capability.
+     */
     public static void enable()
     {
         if (!enabled)
